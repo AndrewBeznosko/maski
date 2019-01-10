@@ -4,6 +4,28 @@
   background-color: $white;
   @include sans-serif-font;
   @include transition-all;
+    position: absolute;
+    width: 100%;
+    
+    .logo_number a{
+        color: rgba(255, 255, 255, 0.7);
+    }
+    
+    &.fixed-top {
+        position: fixed;
+        
+        .logo_number {
+            display: none;
+        }
+        
+        .btn-success {
+            display: inline-block !important;
+            font-size: 1rem;
+            color: #fff !important;
+            text-transform: none;
+            font-weight: normal;
+        }
+    }
   .navbar-brand {
     font-weight: 700;
     text-transform: uppercase;

@@ -13,7 +13,7 @@
     text-align: center;
     opacity: 0;
     color: $white;
-    background: fade-out($primary, .1);
+    background: rgba(33, 37, 41, 0.9);
     @include transition-all;
     .portfolio-box-caption-content {
       position: absolute;
