@@ -21,15 +21,18 @@ header.masthead {
             font-size: 1.15rem;
         }
     }
-    
+
     @media (max-width: 991px) {
+        padding-top: 6rem;
+        padding-bottom: calc(8rem - 56px);
+
         h1 {
-            font-size: 2.3rem;
+            font-size: 2rem;
             width: 100%;
             text-align: center;
         }
     }
-    
+
     @media (min-width: 992px) {
         height: 100vh;
         min-height: 650px;
@@ -61,8 +64,10 @@ header.masthead {
     text-shadow: 0 -20px 400px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
 }
 
-.neon_txt b span {
-    animation: blink linear infinite 2s;
+@media (min-width: 992px) {
+    .neon_txt b span {
+        animation: blink linear infinite 2s;
+    }
 }
 
 @keyframes blink {
@@ -135,25 +140,29 @@ header.masthead {
     }
 
     @media (max-width: 991px) {
-        min-height: 180px;
+        min-height: 260px;
 
         img {
             max-width: 200px;
 
             &:nth-of-type(1) {
-                left: 20%;
+                left: 30%;
+                top: 30%;
             }
 
             &:nth-of-type(2) {
-                left: 40%;
+                left: 70%;
+                top: 30%;
             }
 
             &:nth-of-type(3) {
-                left: 60%;
+                left: 30%;
+                top: 70%;
             }
 
             &:nth-of-type(4) {
-                left: 80%;
+                left: 70%;
+                top: 70%;
             }
         }
     }
@@ -263,4 +272,54 @@ header.masthead {
 
 // responsive
 
-@media (min-width: 992px) {}
+@media (max-width: 991px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .header_price i,
+    .neon_txt b {
+        font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+        color: #ff9e9e;
+        text-shadow: 0 0 1em #f44, 0 10px 3px #000;
+    }
+
+    .neon_txt_blue {
+        font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+        color: #e3f2fd;
+        text-shadow: 0 0 0.5em #42a5f5, 0 10px 3px #000;
+    }
+
+    .light_box_border,
+    .form_wrap {
+        box-shadow: 0 0 0.5em #f44, inset 0 0 0.5em #f44, 0 10px 3px #000;
+    }
+
+    .light_sec_border {
+        box-shadow: 0 0 0.5em #f44, inset 0 0 0.5em #f44, 0 10px 3px #000;
+    }
+
+    .header_price {
+        width: 100%;
+        text-align: center;
+        line-height: 1.2;
+        margin-top: 1rem;
+    }
+
+    #sec_delivery {
+        padding: 3rem 0 3rem;
+
+        .img_wrapper {
+            min-height: 70px;
+            max-width: 170px;
+        }
+    }
+
+    section {
+        padding: 3rem 0;
+    }
+    
+    #mainNav .logo_number a {
+        color: rgba(0, 0, 0, 0.8);
+    }
+}
