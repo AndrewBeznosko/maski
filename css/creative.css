@@ -16,7 +16,7 @@ body {
   background-image: url("../img/header.jpg");
   background-repeat: repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: 100% auto;
 }
 
 hr {
@@ -494,6 +494,7 @@ header.masthead p {
 @media (max-width: 991px) {
   body {
     overflow-x: hidden;
+    background-size: cover;
   }
   .header_price i,
   .neon_txt b {

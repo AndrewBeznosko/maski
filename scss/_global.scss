@@ -11,7 +11,7 @@ body {
     background-image: url('../img/header.jpg');
     background-repeat: repeat;
     background-position: center center;
-    @include background-cover;
+    background-size: 100% auto;
 }
 
 hr {
