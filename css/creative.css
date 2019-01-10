@@ -334,7 +334,7 @@ header.masthead p {
 }
 
 .mask_imgs_wrap img {
-  max-width: 260px;
+  max-width: 280px;
   position: absolute;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -346,15 +346,48 @@ header.masthead p {
 }
 
 .mask_imgs_wrap img:nth-of-type(2) {
-  left: 25%;
+  left: 30%;
 }
 
 .mask_imgs_wrap img:nth-of-type(3) {
-  left: 40%;
+  left: 50%;
 }
 
 .mask_imgs_wrap img:nth-of-type(4) {
-  left: 55%;
+  left: 70%;
+}
+
+.header_price {
+  line-height: 1.6;
+  display: inline-block;
+}
+
+.header_price b {
+  color: #E3F2FD;
+  text-shadow: 0 -20px 400px, 0 0 2px, 0 0 1em #42A5F5, 0 0 0.5em #42A5F5, 0 0 0.1em #42A5F5, 0 10px 3px #000;
+}
+
+.header_price b i {
+  font-style: normal;
+  font-size: 2.5rem;
+  color: #fee;
+  text-shadow: 0 -20px 400px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+}
+
+.form_wrap {
+  margin-top: 2.2rem;
+  border-radius: 15px;
+  padding: 20px;
+  border: solid 6px #fee;
+  -webkit-box-shadow: 0px 0px 300px -50px, 0 0 5px, 0 0 1em #f44, 0 0 0.5em #f44, inset 0 0 0.5em #f44, 0 0 0.1em #f44, 0 10px 3px #000;
+  box-shadow: 0px 0px 300px -50px, 0 0 5px, 0 0 1em #f44, 0 0 0.5em #f44, inset 0 0 0.5em #f44, 0 0 0.1em #f44, 0 10px 3px #000;
+  background-color: white;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  z-index: 1;
+}
+
+.form_wrap label {
+  color: #2b2e34;
 }
 
 .service-box {
@@ -428,29 +461,57 @@ header.masthead p {
   color: #F05F40 !important;
 }
 
-.btn {
-  font-weight: 700;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 300px;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+.banner_right {
+  position: relative;
 }
 
-.btn-xl {
-  padding: 1rem 2rem;
+svg {
+  position: absolute;
+  top: 4rem;
+  right: 87%;
+  -webkit-transform: rotate(24deg);
+  transform: rotate(24deg);
+  width: 200px;
+  height: 200px;
+  -webkit-filter: drop-shadow(0 0 7em #4caf50) drop-shadow(0 0 0.3em #4caf50) drop-shadow(0 0 0.1em #4caf50) drop-shadow(0 10px 3px #000);
+  filter: drop-shadow(0 0 7em #4caf50) drop-shadow(0 0 0.3em #4caf50) drop-shadow(0 0 0.1em #4caf50) drop-shadow(0 10px 3px #000);
+  z-index: 0;
 }
 
-.btn-primary {
-  background-color: #F05F40;
-  border-color: #F05F40;
+svg .draw-arrow {
+  stroke-width: 3;
+  stroke: #e8f5e9;
+  fill: none;
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  -webkit-animation-duration: 2.0s;
+  animation-duration: 2.0s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: draw;
+  animation-name: draw;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  color: #fff;
-  background-color: #ee4b28 !important;
+svg .draw-arrow.tail-1 {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
 }
 
-.btn-primary:active, .btn-primary:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
-  box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+svg .draw-arrow.tail-2 {
+  -webkit-animation-delay: 2.7s;
+  animation-delay: 2.7s;
+}
+
+@-webkit-keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
 }

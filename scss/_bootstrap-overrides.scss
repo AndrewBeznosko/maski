@@ -3,29 +3,44 @@
   color: $primary !important;
 }
 
-.btn {
-  font-weight: 700;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 300px;
-  @include sans-serif-font;
+// SVG curved animated arrow
+
+.banner_right {
+    position: relative;
 }
 
-.btn-xl {
-  padding: 1rem 2rem;
+svg {
+    position: absolute;
+    top: 4rem;
+    right: 87%;
+    transform: rotate(24deg);
+    width: 200px;
+    height: 200px; 
+    -webkit-filter: drop-shadow(0 0 7em #4caf50) drop-shadow(0 0 .3em #4caf50) drop-shadow(0 0 .1em #4caf50) drop-shadow(0 10px 3px #000);
+    filter: drop-shadow(0 0 7em #4caf50) drop-shadow(0 0 .3em #4caf50) drop-shadow(0 0 .1em #4caf50) drop-shadow(0 10px 3px #000);
+    z-index: 0;
+    
+    .draw-arrow {  
+        stroke-width: 3;
+        stroke: #e8f5e9; 
+        fill: none;
+        stroke-dasharray: 400;
+        stroke-dashoffset: 400; 
+        animation-duration: 2.0s;
+        animation-fill-mode: forwards;
+        animation-name: draw;
+        animation-delay: 2s;
+        
+        &.tail-1 {
+            animation-delay: 2.5s;
+        }
+        &.tail-2 {
+            animation-delay: 2.7s;
+        }
+    }
 }
-
-.btn-primary {
-  background-color: $primary;
-  border-color: $primary;
-  &:hover,
-  &:focus,
-  &:active {
-    color: $white;
-    background-color: darken($primary, 5%) !important;
-  }
-  &:active,
-  &:focus {
-    box-shadow: 0 0 0 0.2rem rgba(240, 95, 64,.5) !important;
+@keyframes draw {
+ to {
+    stroke-dashoffset: 0;
   }
 }
