@@ -2,9 +2,6 @@
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url('../img/header.jpg');
-  background-position: center center;
-  @include background-cover;
   hr {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -169,4 +166,14 @@ header.masthead {
     label {
         color: #2b2e34;
     }
+}
+
+
+//light_sec_border
+.light_sec_border {
+    border: solid 6px #fee;
+    border-right: none;
+    border-left: none;
+    -webkit-box-shadow: 0 0 300px -50px, 0 0 5px, 0 0 1em #f44, 0 0 0.5em #f44, inset 0 0 0.5em #f44, 0 0 0.1em #f44, 0 10px 3px #000;
+    box-shadow: 0 0 300px -50px, 0 0 5px, 0 0 1em #f44, 0 0 0.5em #f44, inset 0 0 0.5em #f44, 0 0 0.1em #f44, 0 10px 3px #000;
 }
