@@ -8,7 +8,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Creative - Start Bootstrap Theme</title>
+    <title>Неоновая маска - Судная Ночь</title>
+    <meta name="keywords" content="неоновая маска, купить маску Судная ночь, маска судная ночь, светящаяся маска, маска фантом, маска из фильма">
+    <meta name="description" content="Купить оригинальную Неоновую маску - Судная Ночь прямиком с завода изготовителя. Ограниченная акция! Скидки до 40%!">
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,6 +26,16 @@
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
 
+    <!-- Global site tag (gtag.js) - Google Ads: 776070828 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-776070828"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'AW-776070828');
+    </script>
+
 </head>
 
 <body id="page-top">
@@ -35,7 +47,7 @@
                 <a title="Позвонить" href="tel:+380974307961">+38(097)430-79-61</a>
                 <!--<a title="Позвонить" href="tel:+380638828438">+38(063)882-84-38</a>-->
             </div>
-            <a class="navbar-brand js-scroll-trigger btn btn-success d-none" href="#page-top">Купить маску</a>
+            <a class="navbar-brand js-scroll-trigger btn btn-success d-none" href="#form_banner" onclick="$('#inputName').focus()">Купить маску</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -73,17 +85,17 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="banner_right">
+                    <div id="form_banner" class="banner_right">
                         <h3 class="neon_txt_blue header_price mb-lg-2"><b><span class="d-lg-block">Успей заказать по акции</span> за <i>499грн</i></b></h3>
                         <div class="form_wrap">
-                            <form action="">
+                            <form action="send.php" method="post">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Имя:</label>
-                                    <input type="text" class="form-control" id="inputName" aria-describedby="emailHelp" placeholder="Андрей">
+                                    <input type="text" name="name" required class="form-control" id="inputName" aria-describedby="emailHelp" placeholder="Андрей">
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">Телефон:</label>
-                                    <input type="tel" class="form-control" id="inputPhone" placeholder="+380974307961">
+                                    <input type="tel" name="phone" required class="form-control" id="inputPhone" placeholder="+380974307961">
                                 </div>
                                 <button type="submit" class="btn btn-success w-100 mt-3">Купить маску</button>
                             </form>
@@ -121,9 +133,9 @@
                 <div class="col-lg-4 col-md-6 text-center">
                     <div class="service-box mx-auto">
                         <div class="img_wrapper mx-auto mb-lg-4">
-                            <img src="img/privat24.svg" alt="privat24">    
+                            <img src="img/privat24.svg" alt="privat24">
                         </div>
-                        <p class="text-muted mb-0"><b>Дарим бесплатную доставку</b> при полной предоплате!</p>
+                        <p class="text-muted mb-0"><b>Дарим бесплатную доставку</b> по всей Украине при полной предоплате!</p>
                     </div>
                 </div>
             </div>
@@ -314,6 +326,34 @@
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
 
+    <!-- BEGIN JIVOSITE CODE {literal} -->
+    <script type='text/javascript'>
+        (function() {
+            var widget_id = '2IxKqrm8qN';
+            var d = document;
+            var w = window;
+
+            function l() {
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = '//code.jivosite.com/script/widget/' + widget_id;
+                var ss = document.getElementsByTagName('script')[0];
+                ss.parentNode.insertBefore(s, ss);
+            }
+            if (d.readyState == 'complete') {
+                l();
+            } else {
+                if (w.attachEvent) {
+                    w.attachEvent('onload', l);
+                } else {
+                    w.addEventListener('load', l, false);
+                }
+            }
+        })();
+
+    </script>
+    <!-- {/literal} END JIVOSITE CODE -->
 </body>
 
 </html>
