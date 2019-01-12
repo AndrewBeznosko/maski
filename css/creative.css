@@ -106,15 +106,15 @@ img::-moz-selection {
   z-index: 999;
 }
 
-#mainNav .logo_number a {
-  color: rgba(255, 255, 255, 0.7);
-}
-
 #mainNav.fixed-top {
   position: fixed;
 }
 
-#mainNav.fixed-top .logo_number {
+#mainNav.fixed-top .soc_links a {
+  opacity: 1;
+}
+
+#mainNav.fixed-top .phone_number {
   display: none;
 }
 
@@ -491,6 +491,35 @@ header.masthead p {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
+.navbar-brand a {
+  opacity: .7;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-brand a:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
+.navbar-brand .fab {
+  opacity: .6;
+  font-size: 1.6rem;
+}
+
+.navbar-brand .fab.fa-viber {
+  color: #8f5db7;
+}
+
+.navbar-brand .fab.fa-telegram {
+  color: #0088cc;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.navbar-brand .fab.fa-whatsapp {
+  color: #25D366;
+}
+
 @media (max-width: 991px) {
   body {
     overflow-x: hidden;
@@ -532,8 +561,20 @@ header.masthead p {
   section {
     padding: 3rem 0;
   }
-  #mainNav .logo_number a {
+  .navbar-brand .phone_number {
     color: rgba(0, 0, 0, 0.8);
+    font-size: 1rem;
+  }
+  .soc_links .fab {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 340px) {
+  .soc_links {
+    position: fixed;
+    bottom: 35px;
+    right: 90px;
   }
 }
 

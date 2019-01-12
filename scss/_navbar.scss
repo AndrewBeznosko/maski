@@ -8,14 +8,14 @@
     width: 100%;
     z-index: 999;
 
-    .logo_number a {
-        color: rgba(255, 255, 255, 0.7);
-    }
-
     &.fixed-top {
         position: fixed;
 
-        .logo_number {
+        .soc_links a {
+            opacity: 1;
+        }
+        
+        .phone_number {
             display: none;
         }
 
