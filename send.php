@@ -36,12 +36,14 @@ curl_close($ch);
 
 $name = $_POST['name'];
 $phone = $_POST['phone'];
+$feedback = $_POST['feedback'];
 $varutm = $utm;
 $token = "734862732:AAFSW-fDThV3umZOus0j9NPxARpR2fwfzVI";
 $chat_id = "-290767710";
 $arr = array(
   'Имя: ' => $name,
   'Телефон: ' => '%2B'.$phone,
+  'Связь: ' => $feedback,
   'url:' => $varutm
 );
 

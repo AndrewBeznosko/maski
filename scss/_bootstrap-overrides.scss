@@ -16,8 +16,7 @@ svg {
     transform: rotate(24deg);
     width: 200px;
     height: 200px; 
-    -webkit-filter: drop-shadow(0 0 7em #4caf50) drop-shadow(0 0 .3em #4caf50) drop-shadow(0 0 .1em #4caf50) drop-shadow(0 10px 3px #000);
-    filter: drop-shadow(0 0 7em #4caf50) drop-shadow(0 0 .3em #4caf50) drop-shadow(0 0 .1em #4caf50) drop-shadow(0 10px 3px #000);
+    filter: drop-shadow(0 0 .3em #4caf50) drop-shadow(0 0 .1em #4caf50) drop-shadow(0 17px 3px #000);
     z-index: 0;
     
     .draw-arrow {  
