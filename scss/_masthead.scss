@@ -54,14 +54,14 @@ header.masthead {
 // neon txt
 .neon_txt_blue {
     font-family: "Vibur", cursive;
-    color: #E3F2FD;
-    text-shadow: 0 -20px 400px, 0 0 2px, 0 0 1em #42A5F5, 0 0 0.5em #42A5F5, 0 0 0.1em #42A5F5, 0 10px 3px #000;
+    color: #d9efff;
+    text-shadow: 0 0 0.5em #42a5f5, 0 0 0.1em #42a5f5, 0 10px 3px #000;
 }
 
 .neon_txt b {
     font-family: "Vibur", cursive;
-    color: #fee;
-    text-shadow: 0 -20px 400px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+    color: #ffe1e1;
+    text-shadow: 0 0 0.5em #f44, 0 0 0.1em #f44, 0 10px 3px #000;
 }
 
 @media (min-width: 992px) {
@@ -176,8 +176,8 @@ header.masthead {
     i {
         font-style: normal;
         font-size: 2.5rem;
-        color: #fee;
-        text-shadow: 0 -20px 400px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+        color: #ffe1e1;
+        text-shadow: 0 0 0.5em #f44, 0 0 0.1em #f44, 0 10px 3px #000;
     }
 }
 
@@ -185,8 +185,8 @@ header.masthead {
     margin-top: 2.2rem;
     border-radius: 15px;
     padding: 20px;
-    border: solid 6px #fee;
-    box-shadow: 0px 0px 300px -50px, 0 0 5px, 0 0 1em #f44, 0 0 0.5em #f44, inset 0 0 0.5em #f44, 0 0 0.1em #f44, 0 10px 3px #000;
+    border: solid 6px #ffe1e1;
+    box-shadow: 0 0 0.5em #f44, inset 0 0 0.5em #f44, 0 0 0.1em #f44, 0 10px 3px #000;
     background-color: rgb(255, 255, 255);
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     z-index: 1;
@@ -199,18 +199,16 @@ header.masthead {
 
 // light_sec_border & light_box_border
 .light_sec_border {
-    border: solid 6px #fee;
+    border: solid 6px #ffe1e1;
     border-right: none;
     border-left: none;
-    -webkit-box-shadow: 0 0 300px -50px, 0 0 5px, 0 0 1em #f44, 0 0 0.5em #f44, inset 0 0 0.5em #f44, 0 0 0.1em #f44, 0 10px 3px #000;
-    box-shadow: 0 0 300px -50px, 0 0 5px, 0 0 1em #f44, 0 0 0.5em #f44, inset 0 0 0.5em #f44, 0 0 0.1em #f44, 0 10px 3px #000;
+    box-shadow: 0 0 0.5em #f44, inset 0 0 0.5em #f44, 0 0 0.1em #f44, 0 10px 3px #000;
 }
 
 .light_box_border {
     border-radius: 15px;
-    border: solid 6px #fee;
-    -webkit-box-shadow: 0 0 300px -50px, 0 0 5px, 0 0 1em #f44, 0 0 0.5em #f44, inset 0 0 0.5em #f44, 0 0 0.1em #f44, 0 10px 3px #000;
-    box-shadow: 0 0 300px -50px, 0 0 5px, 0 0 1em #f44, 0 0 0.5em #f44, inset 0 0 0.5em #f44, 0 0 0.1em #f44, 0 10px 3px #000;
+    border: solid 6px #ffe1e1;
+    box-shadow: 0 0 0.5em #f44, inset 0 0 0.5em #f44, 0 0 0.1em #f44, 0 10px 3px #000;
 }
 
 // #sec_video
@@ -235,7 +233,7 @@ header.masthead {
 #sec_video {
     .neon_txt {
         color: #E3F2FD;
-        text-shadow: 0 -20px 400px, 0 0 2px, 0 0 1em #42A5F5, 0 0 0.5em #42A5F5, 0 0 0.1em #42A5F5, 0 10px 3px #000;
+        text-shadow: 0 0 0.5em #42A5F5, 0 0 0.1em #42A5F5, 0 10px 3px #000;
     }
 
     .table td,
