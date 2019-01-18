@@ -271,28 +271,28 @@ header.masthead {
 .navbar-brand {
     a {
         opacity: .7;
-        color: rgba(255,255,255,.7);
-        
+        color: rgba(255, 255, 255, .7);
+
         &:hover {
             text-decoration: none;
             opacity: 1;
         }
     }
-    
+
     .fab {
         opacity: .6;
         font-size: 1.6rem;
-        
+
         &.fa-viber {
             color: #8f5db7;
         }
-        
+
         &.fa-telegram {
             color: #0088cc;
             border-radius: 50%;
             background: #fff;
         }
-        
+
         &.fa-whatsapp {
             color: #25D366;
         }
@@ -349,14 +349,20 @@ header.masthead {
     section {
         padding: 3rem 0;
     }
-    
+
     .navbar-brand .phone_number {
         color: rgba(0, 0, 0, 0.8);
         font-size: 1rem;
     }
-    
+
     .soc_links .fab {
         opacity: 1;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        background-size: 400% auto;
     }
 }
 

@@ -570,6 +570,12 @@ header.masthead p {
   }
 }
 
+@media (max-width: 576px) {
+  body {
+    background-size: 400% auto;
+  }
+}
+
 @media (max-width: 340px) {
   .soc_links {
     position: fixed;
