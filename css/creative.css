@@ -719,7 +719,7 @@ svg .draw-arrow.tail-2 {
   right: 100%;
   bottom: 20px;
   background: #ed1c24;
-  min-width: 280px;
+  min-width: 230px;
   padding: 20px;
 }
 
@@ -733,7 +733,18 @@ svg .draw-arrow.tail-2 {
   padding: 0.5rem 1.2rem;
   width: 100%;
   text-transform: initial;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.discount_price img {
+  width: 4rem;
+  height: auto;
+  margin-right: 1rem;
 }
 
 .discount_dengi {
@@ -741,9 +752,17 @@ svg .draw-arrow.tail-2 {
   margin-bottom: .7rem;
 }
 
+.discount .text-uppercase {
+  line-height: 1;
+}
+
 .do_konca_dnya {
   font-size: .8rem;
-  letter-spacing: .05rem;
+  letter-spacing: .06rem;
+}
+
+#countdown {
+  margin-top: .5rem;
 }
 
 h3#tiles {
@@ -835,17 +854,7 @@ h3#tiles {
   }
 }
 
-.header_price i {
-  text-shadow: 0 0 0.5em #f44, 0 0 0.1em #f44;
-  text-decoration: line-through;
-}
-
 @media (max-width: 991px) {
-  .header_price i {
-    color: #ad9a9a;
-    text-decoration: line-through;
-    text-shadow: 0 0 1em #f44;
-  }
   .discount {
     position: relative;
     right: initial;
@@ -855,6 +864,6 @@ h3#tiles {
     margin-bottom: 20px;
   }
   .form_wrap {
-    margin-top: 2.5rem;
+    margin-top: 4.5rem;
   }
 }
