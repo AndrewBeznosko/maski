@@ -1,0 +1,125 @@
+.form_wrap {
+    position: relative;
+}
+
+.discount {
+    position: absolute;
+    right: 100%;
+    bottom: 20px;
+    background: #ed1c24;
+    min-width: 280px;
+    padding: 20px;
+
+    &_price {
+        background: #fff;
+        color: #ed1c24;
+        position: absolute;
+        bottom: 100%;
+        right: 0;
+        margin-bottom: 0;
+        padding: 0.5rem 1.2rem;
+        width: 100%;
+        text-transform: initial;
+        display: inline-block;
+    }
+    
+    &_dengi {
+        font-weight: 700; 
+        margin-bottom: .7rem;
+    }
+}
+
+.do_konca_dnya {
+    font-size: .8rem;
+    letter-spacing: .05rem;
+}
+
+h3#tiles {
+    letter-spacing: 4px;
+}
+
+
+.ddr::before,
+.ddr::after {
+    content: "";
+    width: 1ch;
+    animation: countdown 1s step-end infinite;
+}
+
+.ddr::after {
+    animation-duration: 0.1s;
+}
+
+@keyframes countdown {
+    0% {
+        content: "9";
+    }
+
+    10% {
+        content: "8";
+    }
+
+    20% {
+        content: "7";
+    }
+
+    30% {
+        content: "6";
+    }
+
+    40% {
+        content: "5";
+    }
+
+    50% {
+        content: "4";
+    }
+
+    60% {
+        content: "3";
+    }
+
+    70% {
+        content: "2";
+    }
+
+    80% {
+        content: "1";
+    }
+
+    90% {
+        content: "0";
+    }
+
+    100% {
+        content: "0";
+    }
+}
+
+.header_price i {
+    text-shadow: 0 0 0.5em #f44, 0 0 0.1em #f44;
+    text-decoration: line-through;
+}
+
+
+@media (max-width: 991px) {
+
+    .header_price i {
+        color: #ad9a9a;
+        text-decoration: line-through;
+        text-shadow: 0 0 1em #f44;
+    }
+
+    .discount {
+        position: relative;
+        right: initial;
+        bottom: initial;
+        background: #ed1c24;
+        min-width: 0;
+        margin-bottom: 20px;
+    }
+
+    .form_wrap {
+        margin-top: 2.5rem;
+    }
+}
