@@ -416,8 +416,8 @@ header.masthead p {
   border-radius: 15px;
   padding: 20px;
   border: solid 6px #ffe1e1;
-  -webkit-box-shadow: 0 0 0.5em #f44, inset 0 0 0.5em #f44, 0 0 0.1em #f44, 0 10px 3px #000;
-  box-shadow: 0 0 0.5em #f44, inset 0 0 0.5em #f44, 0 0 0.1em #f44, 0 10px 3px #000;
+  -webkit-box-shadow: 0 0 0.3em #f44, inset 0 0 0.3em #f44;
+  box-shadow: 0 0 0.3em #f44, inset 0 0 0.3em #f44;
   background-color: white;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   z-index: 1;
@@ -718,10 +718,10 @@ svg .draw-arrow.tail-2 {
 
 .discount {
   position: absolute;
-  right: 100%;
+  right: -10%;
   bottom: 20px;
   background: #ed1c24;
-  min-width: 280px;
+  min-width: 670px;
   padding: 20px;
 }
 
@@ -743,9 +743,14 @@ svg .draw-arrow.tail-2 {
   margin-bottom: .7rem;
 }
 
+.discount .text-uppercase {
+  line-height: 1;
+}
+
 .do_konca_dnya {
   font-size: .8rem;
-  letter-spacing: .05rem;
+  letter-spacing: .06rem;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 h3#tiles {
@@ -844,7 +849,7 @@ h3#tiles {
 
 @media (max-width: 991px) {
   .header_price i {
-    color: #ad9a9a;
+    color: #f3adad;
     text-decoration: line-through;
     text-shadow: 0 0 1em #f44;
   }
@@ -854,9 +859,26 @@ h3#tiles {
     bottom: initial;
     background: #ed1c24;
     min-width: 0;
-    margin-bottom: 20px;
+    margin-top: 100px;
+    margin-bottom: -20px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .discount > .d-flex {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .discount_dengi {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
   }
   .form_wrap {
-    margin-top: 2.5rem;
+    margin-top: 0;
+  }
+  .discount_price {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
